@@ -9,8 +9,9 @@ html{
     scroll-behavior: smooth;
 }
 html, body {
-    overflow-x: hidden;
-    width: 100%;
+    overflow-x: none;
+    overflow-y: none;
+    max-width: 100%;width: 100%;
 }
 
 scroll-target {
@@ -28,7 +29,7 @@ body {
     line-height: 2;
     color: #333;
     background-color: #f9f9f9;
-
+    overflow-x: hidden;
 
     background: radial-gradient(circle, #f0c6c6, #f9e4d6, #a9d7bf, #f9cbe2);
     background-size: 100% 150%;
