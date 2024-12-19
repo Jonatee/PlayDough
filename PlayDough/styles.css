@@ -607,6 +607,8 @@ footer {
     }
 
     .menu-icon {
+        cursor: pointer;
+
         display: block;
     }
 
@@ -637,7 +639,9 @@ footer {
         gap: 50px;
     }
     body{
-        width: 100%;
+        width: 110%;
+        overflow-y: none;
+        overflow-x: none;
     }
 }
 
