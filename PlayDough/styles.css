@@ -1,16 +1,27 @@
 /* General Reset */
 * {
     margin: 0;
+    max-width: 100%;
     padding: 0;
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 scroll-target {
     scroll-margin-top: 80px;
     padding: 20px;
 }
+img, .hero img, .navbar img, .steps img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 body {
     font-family: 'Nunito', sans-serif;
