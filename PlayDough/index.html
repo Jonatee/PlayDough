@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayDough</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <div class="logo">PlayDough</div>
+            <img src="img/project Playdough.jfif" alt="Logo Image">
+        </div>
+        <nav>
+            <div class="menu-icon">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 7H26M4 15H26M4 23H26" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="scroll-link">Steps To Buy</a></li>
+                <li><a href="#pricing" class="scroll-link">Trading</a></li>
+                <li><a href="#features" class="scroll-link">NFTs</a></li>
+                <li><a href="#contact" class="scroll-link">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="hero" class="hero">
+            <h1>Welcome to PlayDough</h1>
+            <p>$PLAYDOUGH X CLAYNUMBERS</p>
+            <a href="#about" class="btn-secondary">Explore More</a>
+            <img src="img/playdoughggg-removebg.png" alt="">
+
+        </section>
+        <section id="about" class="about scroll-target">
+            <p>BUY $PLAYDOUGH 🟩 TODAY. NFA, DYOR</p>
+
+            <div class="container">
+                <div class="intro-text">
+                    <h1>How to Buy PlayDough Coin</h1>
+                    <p>Follow these simple steps to get started with PlayDough on the XRP network.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <h2>1. Set Up a Xaman Wallet or First Ledger Account</h2>
+                        <p>Create an account on Xaman or First Ledger to store your PlayDough coins safely.</p>
+                    </div>
+
+                    <div class="step">
+                        <h2>2. Fund Your Wallet with XRP Token</h2>
+                        <p>Buy XRP tokens from popular exchanges like Binance, Coinbase and transfer them to your
+                            wallet.</p>
+                    </div>
+
+                    <div class="step">
+                        <h2>3. Set Up the Trustline for PlayDough</h2>
+                        <p>Configure the PlayDough trustline to allow transactions on the XRP network.</p>
+                    </div>
+
+                    <div class="step">
+                        <h2>4. Swap Your XRP into PlayDough on XMAGNETIC</h2>
+                        <p>Go to XMAGNETIC and swap your XRP for PlayDough tokens.</p>
+                    </div>
+
+                    <div class="step">
+                        <h2>5. All Done!!!</h2>
+                        <p>You're now ready to enjoy and use PlayDough! Happy investing!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="pricing" class="pricing  scroll-target">
+            <h2>Trading</h2>
+            <p>Set your TRUSTLINE to your Wallet & Trade our Coin.</p>
+
+            <div class="tradingview-widget-container">
+                <div id="tradingview_btcusd"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    function adjustWidgetSize() {
+                        const container = document.getElementById('tradingview_btcusd');
+                        const width = Math.min(window.innerWidth * 0.9, 1200); // 90% of screen width, max 1200px
+                        const height = Math.min(window.innerHeight * 0.8, 800); // 80% of screen height, max 800px
+
+                        container.innerHTML = ''; // Clear any previous widget
+
+                        new TradingView.widget({
+                            "width": width,
+                            "height": height,
+                            "symbol": "BTCUSD",
+                            "interval": "D",
+                            "theme": "light",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "allow_symbol_change": false,
+                            "enable_publishing": false,
+                            "container_id": "tradingview_btcusd",
+                            "fullscreen": true // Enable fullscreen option
+                        });
+                    }
+
+                    window.addEventListener('resize', adjustWidgetSize); // Recalculate on window resize
+                    window.addEventListener('load', adjustWidgetSize); // Initialize when page loads
+                </script>
+            </div>
+
+
+            <div class="trustlinebuy">
+                <button class="settrustline"
+                    onclick="location.href = 'https://xmagnetic.org/tokens/PLAYDOUGH%2Br47tJnCkbLupqQaWxqKnZcDCxdXR8VkP1C?network=mainnet&currency=PLAYDOUGH&issuer=r47tJnCkbLupqQaWxqKnZcDCxdXR8VkP1C'">Set
+                    Trustline</button>
+                <button class="buybutton"
+                    onclick="location.href = 'https://xmagnetic.org/dex/PLAYDOUGH+r47tJnCkbLupqQaWxqKnZcDCxdXR8VkP1C_XRP+XRP?network=mainnet'">BUY
+                    NOW!</button>
+            </div>
+            <button class="firstledger"
+                onclick="location.href='https://firstledger.net/token/r47tJnCkbLupqQaWxqKnZcDCxdXR8VkP1C/504C4159444F5547480000000000000000000000'">Connect
+                to First Ledger</button>
+        </section>
+        <section id="features" class="features scroll-target">
+            <h2>Our NFTs are Available On XRPCafe</h2>
+            <div class="nfts">
+                <div class="fine-art">
+                    <h3>Fine Arts NFT<h3>
+                            <a href="https://xrp.cafe/collection/fineart">
+                                <img src="img/fine-art playdough.webp" alt="">
+                                <button class="fineartbutton"
+                                    onclick="location.href = 'https://xrp.cafe/collection/fineart'">Check It
+                                    Out</button>
+                            </a>
+                </div>
+                <div class="illegal puppets">
+                    <h3>Illegal Puppets NFT<h3>
+                            <a href="https://xrp.cafe/collection/illegalpuppets">
+                                <img src="img/illegal puppets.webp" alt="">
+                                <button class="fineartbutton"
+                                    onclick="location.href = 'https://xrp.cafe/collection/illegalpuppets'">Check It
+                                    Out</button>
+                            </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact   scroll-target">
+            <h2>Community</h2>
+            <p>Join our vibrant community of creatives.</p>
+            <ul class="socials">
+                <li class="twitter">
+                    <a href="https://x.com/papiplaydough">
+                        <div class="twittersvg">
+                            <?xml version="1.0" ?>
+                            <!DOCTYPE svg
+                                PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                                enable-background="new 0 0 48 48" id="Layer_1" version="1.1" viewBox="0 0 48 48"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <circle cx="24" cy="24" fill="#1CB7EB" r="24" />
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M36.8,15.4c-0.9,0.5-2,0.8-3,0.9c1.1-0.7,1.9-1.8,2.3-3.1c-1,0.6-2.1,1.1-3.4,1.4c-1-1.1-2.3-1.8-3.8-1.8    c-2.9,0-5.3,2.5-5.3,5.7c0,0.4,0,0.9,0.1,1.3c-4.4-0.2-8.3-2.5-10.9-5.9c-0.5,0.8-0.7,1.8-0.7,2.9c0,2,0.9,3.7,2.3,4.7    c-0.9,0-1.7-0.3-2.4-0.7c0,0,0,0.1,0,0.1c0,2.7,1.8,5,4.2,5.6c-0.4,0.1-0.9,0.2-1.4,0.2c-0.3,0-0.7,0-1-0.1    c0.7,2.3,2.6,3.9,4.9,3.9c-1.8,1.5-4.1,2.4-6.5,2.4c-0.4,0-0.8,0-1.3-0.1c2.3,1.6,5.1,2.6,8.1,2.6c9.7,0,15-8.6,15-16.1    c0-0.2,0-0.5,0-0.7C35.2,17.6,36.1,16.6,36.8,15.4z"
+                                            fill="#FFFFFF" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="discord">
+                    <a href="https://discord.gg/GgcVWwU43y">
+                        <div class="discordsvg">
+                            <?xml version="1.0" ?>
+                            <!DOCTYPE svg
+                                PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                                style="enable-background:new 0 0 200 200;" version="1.1" viewBox="0 0 200 200"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #0087BC;
+                                    }
+
+                                    .st1 {
+                                        fill: #F2F2F2;
+                                    }
+
+                                    .st2 {
+                                        fill: #B3B3B3;
+                                    }
+
+                                    .st3 {
+                                        fill: #F2F2F2;
+                                        stroke: #B3B3B3;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st4 {
+                                        opacity: 0.3;
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st5 {
+                                        opacity: 0.2;
+                                        fill: #F2F2F2;
+                                    }
+
+                                    .st6 {
+                                        fill: #E84236;
+                                    }
+
+                                    .st7 {
+                                        fill: #FFFFFF;
+                                        stroke: #B3B3B3;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st8 {
+                                        fill: #5C337F;
+                                    }
+
+                                    .st9 {
+                                        fill: #6988B7;
+                                    }
+
+                                    .st10 {
+                                        fill: #FFFFFF;
+                                        stroke: #B3B3B3;
+                                        stroke-width: 2;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st11 {
+                                        fill: #0067E3;
+                                    }
+
+                                    .st12 {
+                                        fill: #FFF200;
+                                    }
+
+                                    .st13 {
+                                        fill: #FFFFFF;
+                                        stroke: #000000;
+                                        stroke-width: 5;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st14 {
+                                        opacity: 0.66;
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st15 {
+                                        fill: #17CB2D;
+                                    }
+
+                                    .st16 {
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st17 {
+                                        fill: #9E0A03;
+                                    }
+
+                                    .st18 {
+                                        opacity: 0.15;
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st19 {
+                                        fill: #CCCCCC;
+                                        stroke: #B3B3B3;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st20 {
+                                        fill: #E6E6E6;
+                                        stroke: #B3B3B3;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st21 {
+                                        fill: #FF233D;
+                                    }
+
+                                    .st22 {
+                                        fill: #F73E26;
+                                    }
+
+                                    .st23 {
+                                        fill: #F2F2F2;
+                                        stroke: #000000;
+                                        stroke-width: 4;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st24 {
+                                        fill: #F2F2F2;
+                                        stroke: #000000;
+                                        stroke-width: 4;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st25 {
+                                        stroke: #000000;
+                                        stroke-width: 4;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st26 {
+                                        fill: none;
+                                        stroke: #000000;
+                                        stroke-width: 4;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st27 {
+                                        fill: url(#SVGID_1_);
+                                    }
+
+                                    .st28 {
+                                        fill: #B22483;
+                                    }
+
+                                    .st29 {
+                                        opacity: 0.32;
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st30 {
+                                        fill: #12A0CC;
+                                    }
+
+                                    .st31 {
+                                        fill: #F2F2F2;
+                                        stroke: #BDCCD4;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st32 {
+                                        fill: #FF1E13;
+                                    }
+
+                                    .st33 {
+                                        fill: #F2F2F2;
+                                        stroke: #CCCCCC;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st34 {
+                                        fill: #FF1E13;
+                                        stroke: #CCCCCC;
+                                        stroke-width: 3;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st35 {
+                                        fill: #1F41CC;
+                                    }
+
+                                    .st36 {
+                                        opacity: 0.2;
+                                        fill: #F2F2F2;
+                                        stroke: #000000;
+                                        stroke-width: 0.5;
+                                        stroke-miterlimit: 10;
+                                    }
+
+                                    .st37 {
+                                        opacity: 0.3;
+                                        fill: #FFFFFF;
+                                        stroke: #000000;
+                                        stroke-width: 0.5;
+                                        stroke-miterlimit: 10;
+                                    }
+                                </style>
+                                <g>
+                                    <g id="Artboard_16" />
+                                    <g id="Linked_In">
+                                        <g id="In" />
+                                        <g id="Bubble_13_" />
+                                    </g>
+                                    <g id="Google_Plus">
+                                        <g id="Icon_3_" />
+                                        <g id="Bubble_12_" />
+                                    </g>
+                                    <g id="Twitch">
+                                        <g id="Twitch_1_" />
+                                        <g id="Bubble_11_" />
+                                    </g>
+                                    <g id="Discord">
+                                        <g>
+                                            <circle class="st9" cx="100" cy="100" r="100" />
+                                        </g>
+                                        <g id="Controller">
+                                            <path class="st10"
+                                                d="M150.1,70.3C142.1,62.6,114,58,114,58v2.4c0,0,14.9,5,18,8.5c0,0-2.1,0.9-2.1,0.9      c-2.9-2.7-10.4-4.5-14-5.5c-0.2-0.1-0.5-0.1-0.6-0.1c-2.3-0.4-4.8-0.7-7.2-0.9c-0.3,0-0.5,0-0.8-0.1c-0.8-0.1-2.2-0.1-2.2-0.1v0      c0,0-0.6,0-0.8,0c-1.2,0-2.6-0.1-3.8-0.1c-0.1,0-0.2,0-0.3,0c-0.2,0-0.3,0-0.5,0c-1.2,0-2.1,0-3.3,0.1C96,63,96,63,96,63v0      c0,0-0.3,0-0.4,0c-0.9,0-1.9,0.1-2.8,0.2c-0.3,0-0.6,0-1,0.1c-2.5,0.2-4.9,0.5-7.2,0.9c-0.2,0-0.4,0-0.6,0.1      c-3.6,1-11,2.8-13.9,5.5c0,0-1.8-0.9-1.8-0.9c3.1-3.5,18.6-8.5,18.6-8.5V58c0,0-28.7,4.7-36.7,12.3      c-12.4,11.9-18.8,58.9-18.8,58.9s8.3,19.1,33.7,12.6l4.6-6.8c0,0-10.7-4.8-10.7-7c0,0,2.8,1,3.8,1.3c3.9,1.3,11.8,4,15.8,5.2      c0.2,0.1,0.4,0.1,0.6,0.1c0.6,0.1,1.2,0.2,1.7,0.4c0.3,0.1,0.6,0.1,0.9,0.2c0.5,0.1,1,0.2,1.6,0.3c0.4,0.1,0.8,0.1,1.2,0.2      c0.5,0.1,1,0.2,1.5,0.2c0.4,0.1,0.9,0.1,1.3,0.2c0.5,0.1,0.9,0.1,1.4,0.2c0.5,0.1,1,0.1,1.5,0.2c0.4,0,0.9,0.1,1.3,0.1      c0.5,0,1.1,0.1,1.6,0.1c0.4,0,0.9,0.1,1.3,0.1c0.5,0,0.5,0,1.5,0.1v0c0,0-0.1,0,0,0c0.3,0,0.6,0,0.9,0c1,0,1.8,0,2.8,0      c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.2,0c0.2,0,0.4,0,0.6,0c0.2,0,0.4,0,0.6,0c0.6,0,1.2,0,1.8,0c0.3,0,0.9,0,1.3,0      c0.1,0,0.6,0,0.6,0v0c0,0,0.3,0,0.5,0c0.4,0,0.7-0.1,1.2-0.1c0.5,0,1-0.1,1.6-0.1c0.4,0,0.9-0.1,1.3-0.1c0.5-0.1,1-0.1,1.4-0.2      c0.5-0.1,0.9-0.1,1.4-0.2c0.4-0.1,0.9-0.1,1.3-0.2c0.5-0.1,1-0.2,1.5-0.2c0.4-0.1,0.8-0.1,1.2-0.2c0.5-0.1,1.1-0.2,1.6-0.3      c0.3-0.1,0.6-0.1,0.9-0.2c0.6-0.1,1.2-0.2,1.7-0.4c0.2,0,0.4-0.1,0.6-0.1c4-1.1,11.9-3.8,15.8-5.2c0.9-0.3,3.8-1.3,3.8-1.3      c0,2.1-10.7,7-10.7,7l4.6,6.8c25.3,6.5,33.7-12.6,33.7-12.6S162.5,82.2,150.1,70.3z M80.8,120.1c-6.3,0-11.4-5.1-11.4-11.4      c0-6.3,5.1-11.4,11.4-11.4c6.3,0,11.4,5.1,11.4,11.4C92.3,115,87.1,120.1,80.8,120.1z M119,120.1c-6.3,0-11.4-5.1-11.4-11.4      c0-6.3,5.1-11.4,11.4-11.4c6.3,0,11.4,5.1,11.4,11.4C130.4,115,125.3,120.1,119,120.1z" />
+                                        </g>
+                                        <g id="Bubble_10_">
+                                            <ellipse class="st4" cx="55.3" cy="56.4" rx="29" ry="19"
+                                                transform="matrix(0.653 -0.7573 0.7573 0.653 -23.551 61.485)" />
+                                            <ellipse class="st4" cx="31" cy="102" rx="11" ry="12" />
+                                            <path class="st5"
+                                                d="M100,5C47.5,5,5,47.5,5,100s42.5,95,95,95s95-42.5,95-95S152.5,5,100,5z M100,190c-49.7,0-90-40.3-90-90      s40.3-90,90-90s90,40.3,90,90S149.7,190,100,190z" />
+                                        </g>
+                                    </g>
+                                    <g id="Behance">
+                                        <g id="BE" />
+                                        <g id="Bubble_9_" />
+                                    </g>
+                                    <g id="SnapChat">
+                                        <g id="Snap_Icon" />
+                                        <g id="Ghost" />
+                                        <g id="Dots" />
+                                        <g id="Bubble_8_" />
+                                    </g>
+                                    <g id="WhatsApp">
+                                        <g id="Icon_2_" />
+                                        <g id="Bubble_7_" />
+                                    </g>
+                                    <g id="Flipboard">
+                                        <g id="Bubble_6_" />
+                                        <g id="Icon_1_" />
+                                    </g>
+                                    <g id="Pinterest">
+                                        <g id="Bubble_5_" />
+                                        <g id="Icon" />
+                                    </g>
+                                    <g id="Reddit">
+                                        <g id="Reddit_Icon" />
+                                        <g id="Bubble_1_" />
+                                    </g>
+                                    <g id="Tumblr">
+                                        <g id="Layer_21" />
+                                        <g id="Bubble" />
+                                    </g>
+                                    <g id="Instagram">
+                                        <g id="Layer_20" />
+                                        <g id="Bubble_4_" />
+                                    </g>
+                                    <g id="Twitter">
+                                        <g id="Twitter_Bird" />
+                                        <g id="Bubble_3_" />
+                                    </g>
+                                    <g id="YouTube">
+                                        <g id="YouTube_Button" />
+                                        <g id="Bubble_2_" />
+                                    </g>
+                                    <g id="Facebook_Icon">
+                                        <g id="Facebook" />
+                                    </g>
+                                </g>
+                            </svg>
+                    </a>
+                </li>
+                <li class="telegram">
+                    <a href="https://t.me/playdoughxrp">
+                        <div class="telegramsvg">
+                            <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 512 512;"
+                                version="1.1" viewBox="0 0 512 512" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: url(#SVGID_1_);
+                                    }
+
+                                    .st1 {
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st2 {
+                                        fill: #D2E4F0;
+                                    }
+
+                                    .st3 {
+                                        fill: #B5CFE4;
+                                    }
+                                </style>
+                                <g>
+                                    <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="256" x2="256"
+                                        y1="0" y2="510.1322">
+                                        <stop offset="0" style="stop-color:#41BCE7" />
+                                        <stop offset="1" style="stop-color:#22A6DC" />
+                                    </linearGradient>
+                                    <circle class="st0" cx="256" cy="256" r="256" />
+                                    <g>
+                                        <path class="st1"
+                                            d="M380.6,147.3l-45.7,230.5c0,0-6.4,16-24,8.3l-105.5-80.9L167,286.7l-64.6-21.7c0,0-9.9-3.5-10.9-11.2    c-1-7.7,11.2-11.8,11.2-11.8l256.8-100.7C359.5,141.2,380.6,131.9,380.6,147.3z" />
+                                        <path class="st2"
+                                            d="M197.2,375.2c0,0-3.1-0.3-6.9-12.4c-3.8-12.1-23.3-76.1-23.3-76.1l155.1-98.5c0,0,9-5.4,8.6,0    c0,0,1.6,1-3.2,5.4c-4.8,4.5-121.8,109.7-121.8,109.7" />
+                                        <path class="st3" d="M245.8,336.2l-41.7,38.1c0,0-3.3,2.5-6.8,0.9l8-70.7" />
+                                    </g>
+                                </g>
+                            </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 PlayDough. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
