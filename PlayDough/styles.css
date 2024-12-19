@@ -20,7 +20,7 @@ body {
 
 
     background: radial-gradient(circle, #f0c6c6, #f9e4d6, #a9d7bf, #f9cbe2);
-    background-size: 150% 150%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     animation: gradientBackground 15s ease infinite;
 }
@@ -615,10 +615,17 @@ footer {
         margin-bottom: 50px;
         top: 20px;
     }
-
+    .steps{
+       display: flex;
+       flex-direction: column;
+       gap: 8px;
+    }
     .nfts {
         display: grid;
         gap: 50px;
+    }
+    body{
+        width: 100%;
     }
 }
 
